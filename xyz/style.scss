@@ -1,0 +1,168 @@
+
+$bg-image-path:"../images/download-page-bg.png";
+.download-page-wrap{
+    width: 1176px;
+    margin:0 auto;
+}
+
+.download-upper-container{
+    background:  #fdf4b8;
+    background-image: url(#{$bg-image-path});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: relative;
+    padding-top:109px;
+    padding-bottom:86px;
+}
+h1{
+    font-size: 36px;
+    text-align: left;
+    font-family: $font-base;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+.main-subheading{
+    font-size: 32px;
+    text-align: left;
+    margin-top:22px;
+}
+.main-description{
+    font-size: 24px;
+    text-align: left;
+    margin-bottom:0;
+    margin-top:35px;
+    line-height: 1.67;
+    color:#464646;
+    width: 45%;
+}
+.playstore-icon{
+    margin-top:58px;
+    max-width: 420px;
+}
+.playstoreIconContainer{
+    text-align: left;
+}
+// .mobileAppContainer{
+
+// }
+.mobile-app-image{
+    position: absolute;
+    top: 102px;
+    right: 50px;
+}
+.qr-code-section{
+    padding-top:39px;
+    padding-bottom:39px;
+    position: relative;
+}
+.qrCode-Container{
+    display: inline-block;
+}
+// .qrcode-app{
+   
+// }
+.qrcode-description{
+    display: block;
+    font-size: 24px;
+    font-family:$font-Futura-Medium;
+    margin-left: 60px;
+    margin-bottom:18px;
+    width: 60%;
+}
+
+
+.qrCode-desc-container{
+    display: inline-block;
+}
+.phoneNumber-input{
+    font-size: 18px;
+    border: solid 1px #191919;
+    padding:12px;
+    width: 268px;
+    margin-left: 60px;
+    // position: absolute;
+    // top: 180.4px;
+    // left: 41.7%;
+    outline:none;
+}
+.Send-Button{
+    font-size: 18px;
+    font-family:$font-Futura-Medium;
+    // position: absolute;
+    background-color: #fed100;
+    border: solid 1px #191919;
+    padding:12px;
+    width: 109.09px;
+    // top:180.4px;
+    // left: 58.5%;
+    cursor: pointer;
+    border-left: none;
+}
+.wishlistCard{
+    position: absolute;
+    top: 57px;
+    right: 277px;
+    z-index: 1;
+}
+// .sendButton{
+//     background: #f8d000;
+//     position: absolute;
+//     right: 55px;
+//     top: 1px;
+//     height: 95%;
+//     width: 55px;
+//     border-left: 1px solid #000000;
+//     border-top: none;
+//     border-right: none;
+//     border-bottom: 0;
+//     font-size: 0;
+//     cursor: pointer;
+// }
+// @media(max-width:1176px
+
+@include mquery(large)
+ {
+    .download-page-wrap{
+        width: 717px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .main-subheading{
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    .main-description{
+        font-size: 14px;
+        margin-top: 14px;
+    }
+    .playstore-icon{
+        max-width: 300px;
+    }
+    .mobile-app-image{
+        max-width: 360px;
+    }
+    .qrcode-description{
+       font-size: 14px;
+       margin-bottom: 14px;
+    }
+    .phoneNumber-input{
+        font-size: 14px;
+        width: 200px;
+    }
+    .Send-Button{
+        font-size: 14px;
+    }
+    .wishlistCard{
+        max-width: 240px;
+        top: 118px;
+        right: 238px;
+    }
+    .Send-Button{
+        font-size: 14px;
+    }
+    .qrcode-app{
+        max-width: 140px;
+    }
+
+}
